@@ -479,9 +479,6 @@ section:hover .zoom {
         bottom: 50%;
         left: 40%;
     }
-    section, footer {
-        /* padding: 0 2rem; */
-    }
     .desktop-view {
         display: block !important;
     }
@@ -502,9 +499,7 @@ section:hover .zoom {
         margin: 0 !important;
     }
 
-    /* #gallery img, #gallery h3, #galery p {
-        margin: auto
-    } */
+    
     #gallery h3 {
         margin: 1.5rem 0 !important;
         text-align: left;
