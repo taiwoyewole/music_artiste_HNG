@@ -287,8 +287,8 @@ section:hover .zoom {
     font-size: 150%;
     padding: 15px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #eee;
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* border: 1px solid #eee; */
 }
   .arrow-up a:hover {
     background-color: #01A9B4;
