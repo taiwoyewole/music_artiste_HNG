@@ -9,6 +9,7 @@ body {
     line-height: 27px;
     color: #87DFD6;
     background-color: #000;
+    overflow-x: hidden;
 }
 #navbar {
     padding-top: 2rem 
@@ -27,8 +28,14 @@ body {
 .wrapper {
     background: url('img/QA-qQfWJM0E.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
+
+.row, .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 
 .navbar-dark .navbar-toggler {
     border-color: transparent;
@@ -36,6 +43,10 @@ body {
 
 button:focus {
     outline: none;
+}
+
+#home {
+    /* max-height: 1250px; */
 }
 
 h2 {
@@ -74,6 +85,79 @@ section:hover .zoom {
       -webkit-transform: scale(0.9);
     }
 }
+.chevron{
+    margin:0;
+    padding:0;
+    justify-content:center;
+    align-items:center;
+}
+    .indicator{
+      position:relative;
+      width:50px;
+      height:50px;
+      left: 44%;
+      transform:rotate(45deg);
+    }
+
+    @media screen and (max-width: 600px) {
+        .indicator {
+            margin-top: 4rem;
+        }
+    }
+      .chevron span{
+        position:absolute;
+        left:0;
+        top:0;
+        width: 55%;
+        height: 55%;
+        box-sizing:border-box;
+        border:none;
+        border-bottom:3px solid #fff;
+        border-right:3px solid #fff;
+        animation:animate 1s linear infinite; 
+      }
+        .chevron span:nth-child(1){
+          top:-30px;
+          left:-30px;
+          animation-delay:0s;
+        }
+        span:nth-child(2){
+          top:-15px;
+          left:-15px;
+          animation-delay:0.2s;
+        }
+        span:nth-child(3){
+          top:0;
+          left:0;
+          animation-delay:0.4s;
+        }
+        span:nth-child(4){
+          top:15px;
+          left:15px;
+          animation-delay:0.6s;
+        }
+        span:nth-child(5){
+          top:30px;
+          left:30px;
+          animation-delay:0.8s;
+        }
+      
+    
+
+  @keyframes animate{
+    0%{
+      border-color:#fff;
+      transform:translate(0,0);
+    }
+     20%{
+      border-color:#fff;
+       transform:translate(15px,15px);
+    }
+     20.1%,100%{
+      border-color:#ffd64a;
+    }
+  }
+
 .inner-home-content {
    height: 500px;
    position: relative;
@@ -82,6 +166,7 @@ section:hover .zoom {
 .mobile-text-container {
     position: absolute;
     top: 31%;
+    left: 1%;
 }
 
 .text-content {
@@ -113,15 +198,6 @@ section:hover .zoom {
     margin-top: -3rem !important;
 }
 
-.chevron a {
-    margin-top: 3rem;
-    width: fit-content;
-}
-
-.chevron a img {
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse 2s infinite;
-}
 .card {
     border: none !important;
     background-color: #000;
@@ -158,9 +234,10 @@ section:hover .zoom {
 
 .play {
     position: absolute;
-    bottom: 50%;
-    left: 40%;
+    bottom: 62%;
+    left: 30%;
 }
+
 #gallery .card-body .small {
     border-bottom: 4px solid #FBFD8A;
     width: fit-content;
@@ -191,6 +268,23 @@ section:hover .zoom {
 
 .rights {
     color: #fff;
+}
+
+@media screen and (max-width: 374px) {
+    .wrapper {
+        background: url('img/QA-qQfWJM0E.svg');
+        background-repeat: no-repeat;
+        background-size: 150%;
+    }
+    .mobile-text-container {
+        top: 31%;
+        left: 3%;
+        max-width: 90%;
+    }
+    .text-content {
+        top: 33%;
+        left: 8%;
+    }
 }
 
 @media screen and (min-width: 400px) {
@@ -230,6 +324,10 @@ section:hover .zoom {
     }
     #music {
         padding-top: 6rem !important;
+    }
+    .play {
+        bottom: 57%;
+        left: 38%;
     }
     #footer .col-sm-6 {
         padding: 2.5rem !important;
@@ -279,6 +377,9 @@ section:hover .zoom {
         float: right;
         margin-top: 15rem;
     }
+    .indicator {
+        left: -39px;
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -286,8 +387,8 @@ section:hover .zoom {
         padding: 2rem 5rem 0 !important;
     }
     .wrapper {
-        background: url('img/desktop\ bg.svg');
-        background-repeat: no-repeat;
+        background: url('img/desktop\ bg.svg') !important;
+        background-repeat: no-repeat !important;
     }
     #home {
         padding: 0 5rem;
@@ -309,12 +410,10 @@ section:hover .zoom {
 
     .chevron {
         float: right;
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
 
-    section {
-        padding: 0 2rem;
-    }
+
     .mobile-view, .paris-desktop{
         display: block;
     }
@@ -363,11 +462,11 @@ section:hover .zoom {
         margin-top: 13rem !important; 
     }
     .chevron {
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
     h2 {
         font-weight: bolder;
         font-size: 50px;
@@ -375,8 +474,13 @@ section:hover .zoom {
         margin-bottom: 2rem !important;    
     }
 
+    
+    .play {
+        bottom: 50%;
+        left: 40%;
+    }
     section, footer {
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
     }
     .desktop-view {
         display: block !important;
@@ -398,8 +502,8 @@ section:hover .zoom {
         margin: 0 !important;
     }
 
-    /* #gallery .card-body {
-        padding-right: 0;
+    /* #gallery img, #gallery h3, #galery p {
+        margin: auto
     } */
     #gallery h3 {
         margin: 1.5rem 0 !important;
@@ -433,10 +537,10 @@ section:hover .zoom {
 }
 @media screen and (min-width: 1200px) {
     .wrapper {
-        background-size: 100%;
+        background-size: 100% !important;
     }
     .chevron {
-        margin-top: -2rem;
+        margin-top: 2rem;
     }
     .desktop-txt-container {
         top: 35%;
@@ -465,7 +569,7 @@ section:hover .zoom {
 }
 @media screen and (min-width: 1400px) {
     .chevron {
-        margin-top: 2rem;
+        margin-top: 9rem;
     }
     .show-content {
         margin: 0 6rem;
@@ -473,5 +577,4 @@ section:hover .zoom {
     h2 {
         padding-right: 5rem !important;
     }
-    
-}
+}  
