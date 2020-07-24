@@ -536,6 +536,10 @@ section:hover .zoom {
     #footer .col-sm-6 {
         padding: 1.5rem !important;
     }
+    
+    .arrow-up {
+        display: none;
+    }
 }
 @media screen and (min-width: 1019px) {
     #music h2 {
@@ -598,3 +602,108 @@ section:hover .zoom {
         padding-right: 5rem !important;
     }
 }  
+
+@media screen and (min-width: 1900px) {
+    body {
+        font-size: 40px;
+    }
+    #navbar {
+        padding: 5rem 10rem 0 !important;
+    }
+    #home {
+        padding: 5rem 10rem 0 !important;
+        height: 1400px;
+    }
+    .inner-home-content {
+        height: 1000px;
+    }
+    .navbar-toggler img {
+        width: 120px;
+    }
+    .navbar-brand {
+        width: 200px;
+    }
+    .nav-link {
+        font-size: 25px;
+    }
+    .desktop-txt-container {
+        width: 800px;
+    }
+    .text-content {
+        top: 41% !important;
+        left: 9%;
+        width: 550px !important;
+    }
+    .text-content p {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 67px;
+    }
+    #home .home-button {
+        margin-left: 20% !important;
+        font-size: 30px;
+        padding: 40px 60px !important;
+    }
+    .chevron {
+        margin-top: 4rem;
+    }
+    .indicator {
+        width: 65px;
+        height: 65px;
+    }
+    h2 {
+        font-size: 90px;
+        margin-bottom: 7rem !important;
+        margin-top: 6rem !important;
+        padding-right: 10rem !important;
+    }
+    .img-one, .img-two, .third-img {
+        width: 500px !important;
+    }
+    .desktop-music-view {
+        margin: 4rem 0 !important;
+    }
+    #music h3 {
+        padding: 1rem 0px;
+    }
+    #music .card-body a img {
+        width: 110px !important;
+    }
+    #gallery img {
+        display: block;
+    width: 800px;
+    margin: auto;   
+    }
+    .play {
+        bottom: 54%;
+        left: 40%;
+        width: 200px !important;
+    }
+    #gallery h3, #gallery .card-body .small {
+        text-align: left;
+        margin: 5% 5% !important;
+        font-size: 45px;
+    }
+    .paris-desktop {
+        width: 85%;
+        display: 0;
+        margin: auto;
+    }
+    .show-content {
+        margin: 4rem 8rem;
+    }
+    .show-content h3 {
+        font-size: 45px;
+    }
+    .show-content .home-button {
+        font-size: 30px;
+        padding: 40px 60px !important;
+    }
+    .icons img, .left-icon img {
+        width: 40%;
+    }
+    .twitter, .instagram {
+        width: 30%;
+    }
+
+}
