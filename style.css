@@ -16,9 +16,18 @@ body {
 }
 
 .nav-item {
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
+.nav-link {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #ffff !important;
+}
+
+.nav-link:hover {
+    color: #01A9B4 !important;
+}
 .navbar-brand {
     width: 140px;
 }
@@ -45,14 +54,10 @@ button:focus {
     outline: none;
 }
 
-#home {
-    /* max-height: 1250px; */
-}
-
 h2 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: bolder;
+    font-size: 35px;
     line-height: 40px;
     color: #87DFD6;
     opacity: 0.34;
@@ -269,6 +274,26 @@ section:hover .zoom {
 .rights {
     color: #fff;
 }
+
+.arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 2;
+  }
+  .arrow-up a {
+    color: #01A9B4;
+    cursor: pointer;
+    font-size: 200%;
+    padding: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #eee;
+}
+  .arrow-up a:hover {
+    background-color: #01A9B4;
+    color: #fff;
+  }
 
 @media screen and (max-width: 374px) {
     .wrapper {
