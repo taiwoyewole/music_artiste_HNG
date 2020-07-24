@@ -607,6 +607,9 @@ section:hover .zoom {
     body {
         font-size: 40px;
     }
+    .wrapper {
+        background-size: 138% !important;
+    }
     #navbar {
         padding: 5rem 10rem 0 !important;
     }
@@ -640,7 +643,7 @@ section:hover .zoom {
         line-height: 67px;
     }
     #home .home-button {
-        margin-left: 20% !important;
+        margin-left: 28% !important;
         font-size: 30px;
         padding: 40px 60px !important;
     }
