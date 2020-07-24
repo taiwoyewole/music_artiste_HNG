@@ -279,7 +279,7 @@ section:hover .zoom {
     position: fixed;
     bottom: 5px;
     right: 60px;
-    z-index: 2;
+    z-index: 10;
   }
   .arrow-up a {
     color: #01A9B4;
