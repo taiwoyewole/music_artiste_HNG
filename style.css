@@ -277,14 +277,14 @@ section:hover .zoom {
 
 .arrow-up {
     position: fixed;
-    bottom: 30px;
-    right: 50px;
+    bottom: 5px;
+    right: 60px;
     z-index: 2;
   }
   .arrow-up a {
     color: #01A9B4;
     cursor: pointer;
-    font-size: 200%;
+    font-size: 150%;
     padding: 20px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
