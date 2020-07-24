@@ -46,13 +46,34 @@ h2 {
     color: #87DFD6;
     opacity: 0.34;
     text-align: right;
-    /* border: 1px solid #87DFD6; */
 }
 
 .desktop-txt-container, .paris-desktop {
     display: none;
 }
 
+section:hover .zoom {
+    display: block;
+    animation: zoomimg 2s infinite;
+    -webkit-animation: zoomimg 2s infinite;
+}
+@-webkit-keyframes zoomimg {
+    0% {
+      -webkit-transform: scale(0.9);
+    }
+    25% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.9);
+    }
+}
 .inner-home-content {
    height: 500px;
    position: relative;
@@ -66,8 +87,8 @@ h2 {
 .text-content {
     position: absolute;
     top: 37%;
-    left: 4%;
-    width: 325px;
+    left: 10%;
+    width: 260px;
 }
 .home-content span {
     color: #fff;
@@ -85,6 +106,7 @@ h2 {
 .home-button:hover {
     box-shadow: -8px -6px 0px 0px #FBFD8A;
     text-decoration: none;
+    color: #FBFD8A;
 }
 
 #home .home-button {
@@ -125,6 +147,20 @@ h2 {
     display: none;
 }
 
+#gallery .card-body {
+    position: relative
+}
+
+#gallery img:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.play {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+}
 #gallery .card-body .small {
     border-bottom: 4px solid #FBFD8A;
     width: fit-content;
@@ -133,7 +169,7 @@ h2 {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     color: #01A9B4;
     margin: 1.5rem;
@@ -163,8 +199,8 @@ h2 {
         left: 2%;
     }
     .text-content {
-        top: 46%;
-        left: 8%;
+        top: 47%;
+        left: 14%;
     }
     #home .home-button {
         margin-top: 1rem !important;
@@ -212,7 +248,7 @@ h2 {
         left: 0px;
     }
     .text-content {
-        top: 360px;
+        top: 394px;
         left: 24px;
         width: 465px !important;
     }
@@ -232,12 +268,12 @@ h2 {
         top: 375px;
     }
     .text-content {
-        top: 450px;
+        top: 476px;
         left: 28px;
     }
       
     #home .home-button {
-        margin: 16rem 0 0 19.5rem !important;
+        margin: 18rem 0 0 21.5rem !important;
     }
     .chevron {
         float: right;
@@ -263,7 +299,7 @@ h2 {
         top: 244px;
     }
     .text-content {
-        top: 310px;
+        top: 340px;
         left: 28px;
     }
     
@@ -388,7 +424,7 @@ h2 {
         width: fit-content;
     }
     .text-content {
-        top: 74%;
+        top: 68% !important;
         left: 3%;
     }
     #gallery h3 {
@@ -402,6 +438,15 @@ h2 {
     .chevron {
         margin-top: -2rem;
     }
+    .desktop-txt-container {
+        top: 35%;
+    }
+    .text-content {
+        top: 54% !important;}
+
+    #home .home-button {
+        margin-top: 3.5rem !important;
+    }
     #music img {
         max-width: 100%;
     }
@@ -412,6 +457,10 @@ h2 {
 @media screen and (min-width: 1300px) {
     #gallery h2 {
         padding-right: 1rem;
+    }
+    .text-content {
+        top: 54% !important;
+        left: 2%;
     }
 }
 @media screen and (min-width: 1400px) {
