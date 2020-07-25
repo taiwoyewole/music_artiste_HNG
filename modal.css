@@ -126,3 +126,28 @@
         right: 4.5%;
     }
 }
+@media screen and (min-width: 1800px) {
+    .overlay .closebtn {
+        right: 8.5%;
+        top: 5.5%;
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .overlay .closebtn {
+        right: 6.5%;
+    }
+    .overlay-content {
+        top: 20%;
+        width: 393px;
+        height: 29%;
+        padding: 1.5rem 0;
+        float: right;
+    }
+    .overlay a {
+        color: #fff;
+        padding: 1rem;
+        font-size: 24px;
+    }
+}
