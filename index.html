@@ -21,43 +21,83 @@
     
     <!-- Core theme CSS-->
     <link href="style.css" rel="stylesheet" />
+    <link href="modal.css" rel="stylesheet" />
 
 </head>
 <body class="w-100">
     <div class="wrapper">
         <header>
           <!-- Navbar -->
-          <nav id="navbar" class="navbar navbar-dark d-flex px-4">
+          <nav class="navbar navbar-expand-sm justify-content-between py-4">
+            <img class="navbar-brand" src="img/logo.svg" alt="Logo">
+
+            <!-- Modal  -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the modal  -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- modal-content -->
+                <div class="overlay-content">
+                  <ul class="text-center">
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="#hom">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="#music">MUSIC</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="#shows">UPCOMING SHOWS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="#footer">BOOK A TICKET</a>
+                    </li>
+                  </ul> 
+                </div> 
+            </div>
+
+            <!-- Toggler Button -->
+            <span onclick="openNav()"><img class="hamburger" src="img/menu.svg" alt=""></span>
+        
+            <!-- <ul class="navbar-nav text-right">
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#hom">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#music">MUSIC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#gallery">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#shows">UPCOMING SHOWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#footer">BOOK A TICKET</a>
+              </li>
+            </ul>  -->
+        </nav>
+    </header>
+    <!-- Navbar Ends Here -->
+
+          <!-- <nav id="navbar" class="navbar navbar-dark d-flex px-4"> -->
             <!-- Brand -->
-            <img class="navbar-brand" src="img/logo.svg">         
+            <!-- <img class="navbar-brand" src="img/logo.svg">          -->
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
               <span>
                 <img src="img/menu.svg" alt="">
               </span>
-            </button>
+            </button> -->
           
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav text-right">
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#hom">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#music">MUSIC</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#gallery">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#shows">UPCOMING SHOWS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#footer">BOOK A TICKET</a>
-                </li>
-              </ul>
+            <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              
             </div>
-          </nav>
+          </nav> -->
         </header>
         <!-- Navbar ends here -->
         
@@ -108,66 +148,69 @@
                 </div>
                 <div class="row mt-5">
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div data-aos="flip-down" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
                       <div class="card">
-                        <div class="card-heading m-auto">
+                        <div class="card-heading  m-auto" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <img class="img-one" src="img/california.svg" alt="">
                         </div>
-                        <div class="card-body text-center mt-3 mb-5">
+                        <div class="card-body text-center mt-3 mb-5"  data-aos="fade-downdata-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <h3>California Woods</h3>
                           <p class="small">(feat. Abel Willock)</p>
                           <a href="">
-                            <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                            <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/apple music logo 1.png" alt="">
+                            <img class="pr-2" src="img/apple music logo 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/Deezer_logo 1.png" alt="">
+                            <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
                           </a>
                         </div>
                       </div>
-                    </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                      <div data-aos="flip-up" data-aos-easing="ease-out-cubic"
-                      data-aos-duration="2000">
                         <div class="card">
-                          <div class="card-heading m-auto">
+                          <div class="card-heading m-auto"  data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                          data-aos-duration="2000">
                             <img class="img-two" src="img/you.svg" alt="">
                           </div>
-                          <div class="card-body text-center mt-3 mb-5">
+                          <div class="card-body text-center mt-3 mb-5"  data-aos="fade-down data-aos-easing="ease-out-cubic"
+                          data-aos-duration="2000">
                             <h3>You and I</h3>
                             <p class="small">You and I</p>
                             <a href="">
-                              <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                              <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
                             </a>
                             <a href="">
-                              <img class="p-2" src="img/apple music logo 1.png" alt="">
+                              <img class="pr-2" src="img/apple music logo 1.png" alt="">
                             </a>
                             <a href="">
-                              <img class="p-2" src="img/Deezer_logo 1.png" alt="">
+                              <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
                             </a>
                           </div>
                         </div>
-                      </div>
-                    </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4 desktop-view">
-                    <div data-aos="flip-up" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                    <div>
                       <div class="card">
-                        <div class="card-heading m-auto">
+                        <div class="card-heading m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <img class="third-img" src="img/midnight.svg" alt="">
                         </div>
-                        <div class="card-body text-center mt-3 mb-5">
+                        <div class="card-body text-center mt-3 mb-5"  data-aos="fade-down data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <h3>Midnight Tapes 2</h3>
                           <p class="small">Midnight Tapes 2 </p>
-                          <img src="img/Spotify_logo_with_text 1.png" alt="">
-                          <img src="img/apple music logo 1.png" alt="">
-                          <img src="img/Deezer_logo 1.png" alt="">
+                          <a href="">
+                            <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                          </a>
+                          <a href="">
+                            <img class="pr-2" src="img/apple music logo 1.png" alt="">
+                          </a>
+                          <a href="">
+                            <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -189,51 +232,51 @@
                         <div class="card-body" id="child1">
                           <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 mobile-view">
-                              
-                              <div data-aos="fade-down">
+                                
+                              <div data-toggle="collapse" data-target="#collapseOneA">
                                 <div class="card">
-                                  <div class="card-heading m-auto">
-                                    <div data-toggle="collapse" data-target="#collapseOneA">
-                                      <img class="third-img" src="img/midnight.svg" alt="">
-                                      <div class="card-body text-center mt-3 mb-5">
-                                        <h3>Midnight Tapes 2</h3>
-                                        <p class="small">Midnight Tapes 2 </p>
-                                        <a href="">
-                                          <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/apple music logo 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/Deezer_logo 1.png" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
+                                  <div class="card-heading m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <img class="third-img" src="img/midnight.svg" alt="">
+                                  </div>
+                                  <div class="card-body text-center mt-3 mb-5"  data-aos="fade--up data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <h3>Midnight Tapes 2</h3>
+                                    <p class="small">Midnight Tapes 2 </p>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/apple music logo 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
+                                    </a>
                                   </div>
                                 </div>
-                              </div>
+                              </div>  
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                               
-                              <div data-aos="fade-down">
+                              <div data-toggle="collapse" data-target="#collapseOneB">
                                 <div class="card">
-                                  <div class="card-header p-0 m-auto">
-                                    <div data-toggle="collapse" data-target="#collapseOneB">
-                                      <img class="img-one" src="img/tapes.svg" alt="">
-                                      <div class="content text-center mt-5 mb-5">
-                                        <h3> Midnight Tapes</h3>
-                                        <p class="small">Midnight Tapes</p>
-                                        <a href="">
-                                          <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/apple music logo 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/Deezer_logo 1.png" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
+                                  <div class="card-heading p-0 m-auto"  data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <img class="img-one" src="img/tapes.svg" alt="">
+                                  </div>
+                                  <div class="content text-center mt-5 mb-5"  data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <h3> Midnight Tapes</h3>
+                                    <p class="small">Midnight Tapes</p>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/apple music logo 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
+                                    </a>
                                   </div>
                                 </div>
                               </div>
@@ -242,51 +285,50 @@
                           <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                               
-                              <div data-aos="fade-down">
+                              <div data-toggle="collapse" data-target="#collapseOneC">
                                 <div class="card">
-                                  <div class="card-header p-0 m-auto">
-                                    <div data-toggle="collapse" data-target="#collapseOneC">      
+                                  <div class="card-heading p-0 m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">      
                                       <img class="img-two" src="img/slumdog.svg" alt="">
-                                      <div class="content text-center mt-5 mb-5">
-                                        <h3>Slumdog Billinaire</h3>
-                                        <p class="small">(feat. Jackie Chan)</p>
-                                        <a href="">
-                                          <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/apple music logo 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/Deezer_logo 1.png" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
+                                  </div>
+                                  <div class="content text-center mt-5 mb-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <h3>Slumdog Billinaire</h3>
+                                    <p class="small">(feat. Jackie Chan)</p>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/apple music logo 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
+                                    </a>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                              <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-6"> -->
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
                               
-                              <div data-aos="fade-up">
+                              <div data-toggle="collapse" data-target="#collapseOneD">
                                 <div class="card">
-                                  <div class="card-header p-0 m-auto">
-                                    <div data-toggle="collapse" data-target="#collapseOneD">
-                                      <img class="third-img" src="img/face.svg" alt="">
-                                      <div class="content text-center mt-5 mb-5">
-                                        <h3>No face No Case</h3>
-                                        <p class="small">Berlin Kid</p>
-                                        <a href="">
-                                          <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/apple music logo 1.png" alt="">
-                                        </a>
-                                        <a href="">
-                                          <img class="p-2" src="img/Deezer_logo 1.png" alt="">
-                                        </a>
-                                      </div>
-                                    </div>
+                                  <div class="card-heading p-0 m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <img class="third-img" src="img/face.svg" alt="">
+                                  </div> 
+                                  <div class="content text-center mt-5 mb-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
+                                    <h3>No face No Case</h3>
+                                    <p class="small">Berlin Kid</p>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/apple music logo 1.png" alt="">
+                                    </a>
+                                    <a href="">
+                                      <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
+                                    </a>
                                   </div>
                                 </div>
                               </div>
@@ -302,34 +344,37 @@
                 <!-- Desktop-show-expand  -->
                 <div class="row desktop-music-view">
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div data-aos="fade-down">
+                  
                       <div class="card">
-                        <div class="card-heading m-auto">
+                        <div class="card-heading m-auto" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <img class="img-one" src="img/tapes.svg" alt="">
                         </div>
-                        <div class="card-body text-center mt-3 mb-5">
+                        <div class="card-body text-center mt-3 mb-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <h3> Midnight Tapes</h3>
                           <p class="small">Midnight Tapes</p>
                           <a href="">
-                            <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                            <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/apple music logo 1.png" alt="">
+                            <img class="pr-2" src="img/apple music logo 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/Deezer_logo 1.png" alt="">
+                            <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
                           </a>
                         </div>
                       </div>
-                    </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div data-aos="fade-down">
+                 
                       <div class="card">
-                        <div class="card-heading m-auto">
+                        <div class="card-heading m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <img class="img-two" src="img/slumdog.svg" alt="">
                         </div>
-                        <div class="card-body text-center mt-3 mb-5">
+                        <div class="card-body text-center mt-3 mb-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <h3>Slumdog Billinaire</h3>
                           <p class="small">(feat. Jackie Chan)</p>
                           <a href="">
@@ -343,36 +388,38 @@
                           </a>
                         </div>
                       </div>
-                    </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div data-aos="fade--up">
+          
                       <div class="card">
-                        <div class="card-heading m-auto">
+                        <div class="card-heading m-auto" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <img class="third-img" src="img/face.svg" alt="">
                         </div>
-                        <div class="card-body text-center mt-3 mb-5">
+                        <div class="card-body text-center mt-3 mb-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                           <h3>No face No Case</h3>
                           <p class="small">Berlin Kid </p>
                           <a href="">
-                            <img class="p-2" src="img/Spotify_logo_with_text 1.png" alt="">
+                            <img class="pr-2" src="img/Spotify_logo_with_text 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/apple music logo 1.png" alt="">
+                            <img class="pr-2" src="img/apple music logo 1.png" alt="">
                           </a>
                           <a href="">
-                            <img class="p-2" src="img/Deezer_logo 1.png" alt="">
+                            <img class="pr-2" src="img/Deezer_logo 1.png" alt="">
                           </a>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- music section ends here -->
 
+        <!-- gallery section starts here  -->
         <section id="gallery" class="my-5">
           <div class="container-fluid">
             <div class="row">
@@ -382,22 +429,21 @@
                 </div>
                   <div class="row mt-5">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                      <div data-aos="fade-up">
-                        <div class="card text-center">
+             
+                        <div class="card text-center" data-aos="fade-up">
                           <div class="card-body">
                             <img class="img-fluid" src="img/viva.svg" alt="">
                             <h3 class="pt-4">Viva la barcelona</h3>
                             <p class="small">2019</p>
                           </div>
                         </div>
-                      </div>
                     </div>
 
                     <!-- Accordion  -->
                     <div class="mobile-accordion container-fluid mb-5">
                       <div id="accordion">
                         <div class="card">
-                          <div class="card-header p-0" id="headingOne">
+                          <div class="card-heading p-0" id="headingOne">
                             <h5 class="mb-0 text-center d-block">
                             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Expand <span><a href="#"><img src="img/chevron-down.png" alt=""></a></span>
@@ -406,10 +452,9 @@
                           </div>
                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body" id="child1">
-                              
-                              <div data-aos="fade-down">
-                                <div class="card">
-                                  <div class="card-header p-0 m-auto">
+                            
+                                <div class="card" data-aos="fade-down">
+                                  <div class="card-heading p-0 m-auto">
                                     <div data-toggle="collapse" data-target="#collapseOneA">
                                       <img class="img-fluid fiesta" src="img/manchester.svg" alt="">
                                       <img class="img-fluid play" src="img/play-circle.svg" alt="">
@@ -420,12 +465,8 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <!-- <div data-aos="fade-up"> -->
-
-                              <div data-aos="fade-up"> 
-                                <div class="card">
-                                  <div class="card-header p-0 m-auto">
+                                <div class="card" data-aos="fade-up">
+                                  <div class="card-heading p-0 m-auto">
                                     <div data-toggle="collapse" data-target="#collapseOneB">   
                                       <img class="img-fluid" src="img/lag.svg" alt="">
                                       <div class="content text-center mt-5 mb-5">
@@ -435,7 +476,6 @@
                                     </div>
                                   </div>
                                 </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -447,8 +487,8 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 desktop-music-view">
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                          <div data-aos="fade-down">
-                            <div class="card">
+           
+                            <div class="card" data-aos="fade-down">
                               <div class="card-body">
                                 <img class="img-fluid fiesta d-block" src="img/manchester.svg" alt="">
                                 <img class="img-fluid play" src="img/play-circle.svg" alt="">
@@ -456,31 +496,29 @@
                                 <p class="small">2019</p>
                               </div>
                             </div>
-                          </div>
                         </div>
-                          <!-- </div> -->
-                          <!-- <div class="row"> -->
+      
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                          <div data-aos="fade-up"
-                          data-aos-duration="3000">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up"
+                            data-aos-duration="3000">
                               <div class="card-body">
                                 <img class="img-fluid d-block" src="img/lag.svg" alt="">
                                 <h3>Lagos, Portugal</h3>
                                 <p class="small">2020</p>
                               </div>
                             </div>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <!-- Ends here -->
+                    <!-- desktop view ends here -->
                   </div>
                 </div>
               </div>
             </div>
           </section>
+          <!-- gallery section ends here -->
 
+          <!-- upcoming shows section  -->
           <section id="shows" class="py-5">
             <div class="container-fluid">
               <div class="row">
@@ -497,7 +535,7 @@
                     <div class="row show-content text-center">
                       <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div data-aos="fade-down">
-                          <h3 CLASS="pt-5">Coachella Paris</h3>
+                          <h3 class="pt-5">Coachella Paris</h3>
                           <p class="small mt-3 mb-5">December 2020</p>
                         </div>
                       </div>
@@ -520,10 +558,9 @@
                 <div data-aos="fade-up">
                   <h2>connect with me</h2>
                 </div>
-                <div data-aos="flip-down" data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
                   <div class="row mt-5">
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 p-4">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 p-4" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                       <a class="left-icon" href="">
                         <img src="img/Spotify_logo_with_text 6.png" alt="">
                       </a>
@@ -554,7 +591,6 @@
                       </a>
                     </div>
                   </div>
-                </div>
                 <div data-aos="fade-up"
                 data-aos-duration="3000">
                   <p class="small rights pt-5 mt-5 text-center"><span><img src="img/ant-design_copyright-circle-outlined.png" alt="#"></span>Pete 2020 All rights Reserved</p>
@@ -569,6 +605,7 @@
       </div>
                 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init();
     </script>
