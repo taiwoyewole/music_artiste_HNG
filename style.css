@@ -11,29 +11,7 @@ body {
     background-color: #000;
     overflow-x: hidden;
 }
-#navbar {
-    padding-top: 2rem 
-}
 
-.nav-item {
-    margin: 1rem;
-}
-
-.nav-link {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 14px;
-    color: #ffff !important;
-}
-
-.nav-link:hover {
-    color: #01A9B4 !important;
-}
-.navbar-brand {
-    width: 140px;
-}
-.navbar-toggler img {
-    width: 60px;
-}
 .wrapper {
     background: url('img/QA-qQfWJM0E.svg');
     background-repeat: no-repeat;
@@ -212,6 +190,16 @@ section:hover .zoom {
     max-width: 90%;
 }
 
+#music .card-body {
+    padding-left: 0 !important;
+}
+#music .card-body a img {
+    width: 80px !important;
+}
+
+#music p .small {
+    color: #fff;
+}
 .img-one {
     box-shadow: 17px 17px #FBFD8A;
 }
@@ -408,7 +396,7 @@ section:hover .zoom {
 }
 
 @media screen and (min-width: 760px) {
-    #navbar {
+    .navbar {
         padding: 2rem 5rem 0 !important;
     }
     .wrapper {
@@ -445,7 +433,7 @@ section:hover .zoom {
     .desktop-view, .paris-mobile {
         display: none !important;
     }
-
+    
     #music h2 {
         margin-top: 3rem;
     }
@@ -558,6 +546,9 @@ section:hover .zoom {
     #gallery h3 {
         text-align: left;
     }
+    .desktop-music-view {
+        margin-top: 2rem;
+    }
 }
 @media screen and (min-width: 1200px) {
     .wrapper {
@@ -610,7 +601,7 @@ section:hover .zoom {
     .wrapper {
         background-size: 138% !important;
     }
-    #navbar {
+    .navbar {
         padding: 5rem 10rem 0 !important;
     }
     #home {
@@ -669,6 +660,7 @@ section:hover .zoom {
     #music h3 {
         padding: 1rem 0px;
     }
+  
     #music .card-body a img {
         width: 110px !important;
     }
